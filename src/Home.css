@@ -1,0 +1,197 @@
+.brand-logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    color: white;
+    background-color: white;
+  }
+  .icon{
+    color: white; 
+  }
+  
+  .background-img{
+    background: url('./Background-Img.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    min-height: 100dvh;
+  }
+  .navbar-custom{
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(233, 234, 238, 0.37);
+    border-radius: 30px;
+  }
+  .nav-link{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .Data-page{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)) ,url('./Data-page2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    min-height: 100dvh;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .side-display-page{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top: 10%;
+    width: 75%;
+    min-height: 70dvh;
+    display: grid;
+    justify-content: center;
+  }
+  .main-display-page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+  }
+  .click-get-location{
+    position:absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .display-city{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  .display-temp{
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+  }
+  .display-TimeandDate{
+    position: absolute;
+    margin: 10px 0;
+    bottom: 150px;
+    left: 30px;
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 15px;
+  }
+  @media (max-width: 575px) {
+    .display-city h2,
+    .display-temp,
+    .display-TimeandDate {
+      font-size: 12px; 
+    }
+  
+    .display-temp {
+      top: 50%;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%);
+    }
+  
+    .display-TimeandDate {
+      bottom: 10px;
+      left: 10px;
+      padding: 10px;
+    }
+  
+  }
+  
+  @media (min-width: 576px)and (max-width: 768px) {
+    .display-city {
+      position:absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 6vw;
+    }
+  
+    .display-temp {
+      position: absolute; 
+      top: 40%; 
+      right: 10px;
+      transform: translate(-50%, -40%); 
+      font-size: 20px;
+       z-index: 2;
+    }
+  
+    .display-TimeandDate {
+      position: absolute;
+      bottom: 10px; 
+      left: 20px;
+      font-size: 4vw;
+      z-index: 1;
+    }
+  } 
+  .loaderBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #25b09b;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+  }
+  @keyframes l27 {
+    100% {transform: rotate(1turn)}
+  }
+  .input-group-text{
+    background: transparent;
+    border: none;
+  }
+  .input-group,.form-control{
+    background: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+  .input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #ffffff;
+  }
+  .weather-icon{
+    width: 70px;
+    height: 70px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.3);
+    }
+    100%{
+      transform: scale(1);
+    }
+    
+  }
+  .input-group{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  form{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  

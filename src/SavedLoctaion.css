@@ -1,0 +1,80 @@
+.mainPage{
+    background: url('./Background-Img.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+.row{
+    width: 100%;
+    gap: 0;
+}
+.col-custom{
+    width: 100%;
+}
+.col-custom.navbar-custom{
+    width: 100%;
+}
+.navbar-custom.container{
+    width: 100%;
+}
+
+
+.DisplayItems{
+    padding-top: 15vh;
+    display: grid;
+    justify-content: center;
+}
+.form-control{
+    background:transparent;
+   border: none;
+
+}
+.input-text{
+    color: white;
+    margin-right: 20px;
+    width: 25vw;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+.input-text:focus{
+    box-shadow: none;
+    outline: none;
+}
+.add-button{
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+.fetching-items{
+    position: relative;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(233, 234, 238, 0.37);
+    border-radius: 30px;
+    width: 450px;
+    height: 100px;
+    list-style: none;
+    padding-left: 5px;
+    padding-top: 35px ;
+    margin-top: 5px;    
+}
+.remove-button{
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+}
+@media (max-width:575px) {
+    .fetching-items{
+        width: 300px;
+        height: 100px;
+    }
+    
+}
