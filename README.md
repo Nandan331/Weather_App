@@ -101,18 +101,18 @@ Install the dependencies:
 npm install
 Run the application:
 
-bash
-Copy code
+
+
 npm start
 Open your web browser and navigate to http://localhost:3000.
 
-Usage
+### Usage
 On the homepage, you can allow the app to fetch your location weather or manually search for a city using the search bar.
 Click on the "Saved Locations" link to view and manage your favorite cities.
 About the Developer
 Hello! I’m Nandan, the developer behind this Weather Application. My passion lies in creating web applications that are not only functional but also visually appealing. This project showcases my skills in React, Bootstrap, and API integration.
 
-Future Enhancements
+### Future Enhancements
 Hourly Weather Updates: Get more granular data with hourly forecasts.
 Severe Weather Alerts: Stay informed about extreme weather conditions with timely notifications.
 Multiple Themes: Choose from various themes to customize the look and feel of your weather dashboard.
